@@ -1,15 +1,18 @@
 import { generateGradients } from './utils'
-import { Container } from './styles'
+import { Heading, Container } from './styles'
 import Gradient from './Gradient'
 
 const App = () => {
   const gradients = generateGradients()
   return (
-    <Container>
-      {gradients.map((gradient, index) => (
-        <Gradient key={index} {...gradient} />
-      ))}
-    </Container>
+    <>
+      <Heading>Gradient Generator</Heading>
+      <Container>
+        {gradients.map((gradient, index) => (
+          <Gradient key={index} {...gradient} />
+        ))}
+      </Container>
+    </>
   )
 }
 

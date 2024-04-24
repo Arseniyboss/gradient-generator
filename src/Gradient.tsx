@@ -19,7 +19,7 @@ const Gradient = (colors: string[]) => {
   }
   return (
     <GradientContainer $gradient={gradient}>
-      <Button onClick={copyGradient}>
+      <Button onClick={copyGradient} aria-label='copy gradient'>
         {isCopied ? <MdDone /> : <MdOutlineContentCopy />}
       </Button>
     </GradientContainer>

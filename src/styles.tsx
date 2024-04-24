@@ -4,6 +4,12 @@ type GradientProps = {
   $gradient: string
 }
 
+export const Heading = styled.h1`
+  text-align: center;
+  color: #555;
+  margin-top: 1rem;
+`
+
 export const Container = styled.div`
   --spacing: 1rem;
   display: grid;
